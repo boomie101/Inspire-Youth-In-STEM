@@ -1,0 +1,13 @@
+#write a program to display a big T
+print("====================")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
+print("          ||        ")
