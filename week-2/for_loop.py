@@ -6,3 +6,4 @@ product = 1
 for x in range(1,10):
     product = product * x
 print(product)
+#factorial
