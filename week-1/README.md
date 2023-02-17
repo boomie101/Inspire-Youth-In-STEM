@@ -1,0 +1,1 @@
+know the difference btw a compiler and an interpreter
