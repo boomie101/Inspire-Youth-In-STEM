@@ -6,7 +6,7 @@
 #print gross income , net income
 income = 90000
 tax = 0.16 * 90000
-net_income = (income - tax)
+net_income = (income - tax) 
 print(net_income)
 
 income = 200000
