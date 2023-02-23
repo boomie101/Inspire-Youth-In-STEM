@@ -5,4 +5,5 @@ c = int(input("Enter the constant"))
 x1 = int(-b) + int(b**2) - 4(a * c) /int(2(a))
 x2 = int(-b) - int(b**2) - 4(a * c) /int(2(a))
 print(x1)
- 
+
+

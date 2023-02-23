@@ -5,4 +5,3 @@ while(num < 10):
     if(num == 5):
         print("Count has reached 5 ")
         continue
-

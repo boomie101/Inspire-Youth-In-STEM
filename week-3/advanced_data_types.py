@@ -32,3 +32,13 @@ print(friend["team"])
 print(friend["height"]) 
 print(student.values())
 print(student.keys())
+
+# 4)sets use curly brackets like dictionaries but does not use the key and value aspect
+cars = {"toyota" , "subaru" , "audi" , "BMW" , "porsche"}
+for car in cars:
+    print(car)
+print(type(cars))
+print(len(cars))
+#sets can either be ordered or non-oreered
+#ordered sets are similar data types non-ordered sets are different data types
+#non-ordered sets are different data types eg have strings,floats,lists......
