@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"href=style.css>
+</head>
+<body>
+    <h1 id="text">JavaScript Basics</h1>
+    <h1 id="f_name"></h1>
+    <h1 id="s_name"></h1>
+    <h1 id="age"></h1>
+    <h1 id="weight"></h1>
+
+    <h2 id="f_number"></h2>
+    <h2 id="s_number"></h2>
+    <h2 id="sum"></h2>
+    <h2 id="full_name"></h2>
+    <h2 id="fruits"></h2>
+    
+
+    <script>
+        //variables in javascript
+        //number
+        //arithmetic operators +,-,/,*,%(modulus)
+        var sum_num = f_number + s_number;
+        var diff_num = f_number - s_number;
+        var prod_num = f_number * s_number;
+        var quot_num = f_number / s_number;
+        var modulus = f_number % s_number;
+        var f_number = 10;
+        var s_number = 20;
+
+        var sum_num = f_number + s_number
+
+        //string
+        var my_first_name = "Nathaniel"
+        var my_second_name = "Njenga"
+        var my_city = "Nairobi"
+        var full_name = my_first_name + " " + my_second_name;
+        var age = 18;
+        var weight = 63.5
+
+        //arrays
+        let fruits = ["Mango","Apple","Pear","Plum","Pomegranate"];
+        let my_fruit = fruits[fruits.length-1];
+
+        var msg = "";
+        //conditions --if else
+        if (age >= 18) {
+            msg = "You can drive";
+        } else{
+            msg = "You are still young"
+        }
+        
+        document.getElementById("fruits").innerHTML = msg
+        document.getElementById("f_name").innerHTML = my_first_name
+        document.getElementById("s_name").innerHTML = my_second_name
+        document.getElementById("age").innerHTML = age
+        document.getElementById("weight").innerHTML = weight
+        document.getElementById("f_number").innerHTML = f_number
+        document.getElementById("s_number").innerHTML = s_number
+        document.getElementById("sum").innerHTML = sum_num
+        document.getElementById("full_name").innerHTML = full_name
+    </script>
+    <button>Click Me</button>
+</body> 
+</html>
