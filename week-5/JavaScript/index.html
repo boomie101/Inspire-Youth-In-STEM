@@ -4,7 +4,8 @@
     <link rel="stylesheet"href=style.css>
 </head>
 <body>
-    <h1 id="text">JavaScript Basics</h1>
+<!--
+        <h1 id="text">JavaScript Basics</h1>
     <h1 id="f_name"></h1>
     <h1 id="s_name"></h1>
     <h1 id="age"></h1>
@@ -15,52 +16,59 @@
     <h2 id="sum"></h2>
     <h2 id="full_name"></h2>
     <h2 id="fruits"></h2>
-    
+-->
+     <h1>LOG IN SYSTEM</h1>
+     <label for="">Name</label><br>
+     <input type="text"><br>
+     <label for="">Age</label><br>
+     <input id="Age" type="int"><br>
+     <button id="confirm button">CONFIRM</button>
+     <h2 id="get_in">Access Granted</h2>
 
-    <script>
-        //variables in javascript
-        //number
-        //arithmetic operators +,-,/,*,%(modulus)
-        var sum_num = f_number + s_number;
-        var diff_num = f_number - s_number;
-        var prod_num = f_number * s_number;
-        var quot_num = f_number / s_number;
-        var modulus = f_number % s_number;
-        var f_number = 10;
-        var s_number = 20;
+     <h1 id="number">0</h1>
+     <button id="increase_btn">Increase</button>
+     <button id="decrease_btn">Decrease</button>
+     <button id="reset_btn">Reset</button>
+     <script>
+    var number = 0
+    //increase
+    document.getElementById("increase_btn").onclick = function Increase_number() {
+        number += 1;
+        console.log(number)
+        document.getElementById("number").value = number
+    }
 
-        var sum_num = f_number + s_number
+    var number = 0
+    //decrease
+    document.getElementById("decrease_btn").onclick = function Decrease_number() {
+        number -= 1;
+        console.log(number)
+        document.getElementById("number").value = number
+    }    
 
-        //string
-        var my_first_name = "Nathaniel"
-        var my_second_name = "Njenga"
-        var my_city = "Nairobi"
-        var full_name = my_first_name + " " + my_second_name;
-        var age = 18;
-        var weight = 63.5
-
-        //arrays
-        let fruits = ["Mango","Apple","Pear","Plum","Pomegranate"];
-        let my_fruit = fruits[fruits.length-1];
-
-        var msg = "";
-        //conditions --if else
-        if (age >= 18) {
-            msg = "You can drive";
-        } else{
-            msg = "You are still young"
-        }
-        
-        document.getElementById("fruits").innerHTML = msg
-        document.getElementById("f_name").innerHTML = my_first_name
-        document.getElementById("s_name").innerHTML = my_second_name
-        document.getElementById("age").innerHTML = age
-        document.getElementById("weight").innerHTML = weight
-        document.getElementById("f_number").innerHTML = f_number
-        document.getElementById("s_number").innerHTML = s_number
-        document.getElementById("sum").innerHTML = sum_num
-        document.getElementById("full_name").innerHTML = full_name
-    </script>
-    <button>Click Me</button>
-</body> 
+    var number = 0
+    //reset
+    document.getElementById("reset_btn").onclick = function Reset_number() {
+        number = 0;
+        console.log(number)
+        document.getElementById("number").value = number
+    }
+    //let age = 0
+    let msg = ""
+    console.log("Button clicked !")
+    document.getElementById("confirm button").onclick = function check_age(){
+     var age = document.getElementById("age").value;
+     console.log(age)
+    if(age <= 18) {
+        msg = "Access Denied"
+        console.log("Access Denied")
+        document.getElementById("get_in").innerHTML = msg
+    } else{
+        msg = "Access Granted"
+        console.log("Access Granted")
+        document.getElementById("get_in").innerHTML = msg
+    }
+}
+     </script>
+</body>
 </html>

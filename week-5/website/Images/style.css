@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(jkuatbuilding.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative
+    
+    
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 300px;   
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: black;
+    text-decoration: none;    
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid black;
+    background: white;
+    transition: 1s;
+}
+
+.text-box {
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+p{
+    color: gold;
+}
+
+h1{
+    color: red;
+}

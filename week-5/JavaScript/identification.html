@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"href=identify.css>
+        <h1>WELCOME TO CLUB KIBOKO</h1>
+        <h2>Kindy fill in your information below:</h2>
+    </head>
+    <body>
+    <h1 id="Name"></h1>
+    <h1 id="Age"></h1>
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" Name="Name" size="30"><br><br>
+            <label for="Age">Age</label>
+            <input type="text" id="Age" Name="Age" size="30"><br><br>
+            <button type="button" onclick="checkage()">CHECK IDENTITIY</button>
+        </form> 
+            <div id="result"></div> 
+                <script>
+                    function checkage() {
+                        var name = document.getElementById("Name").value;
+                        var age = document.getElementById("Age").value;
+              if (age > 18) {
+              document.getElementById("result").innerHTML = "Kindly go home";
+              }
+
+              else{
+              document.getElementById("result").innerHTML = "Welcome and have a nice time";
+              }
+                    }
+              
+        </script>
+    </body>
+</html>
